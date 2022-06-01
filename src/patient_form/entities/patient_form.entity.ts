@@ -16,6 +16,11 @@ export class PatientForm {
     @JoinColumn({ name: 'userId', referencedColumnName: 'id' })
     user: User
 
+
+    @Column()
+    image: string
+
+
     @Column()
     Q1: boolean
 

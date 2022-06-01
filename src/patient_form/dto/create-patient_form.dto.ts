@@ -11,6 +11,12 @@ export class CreatePatientFormDto {
     @IsString()
     description: string
 
+
+    @ApiProperty()
+    @IsString()
+    image: string
+
+
     @ApiProperty()
     @IsBoolean()
     Q1: boolean

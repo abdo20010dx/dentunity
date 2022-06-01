@@ -11,4 +11,9 @@ export class CreateDiagnosisFormDto {
     @IsString()
     description: string
 
+    @ApiProperty()
+    @IsNumber()
+    patientFormId: number
+
+
 }

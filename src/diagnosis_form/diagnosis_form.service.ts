@@ -17,11 +17,11 @@ export class DiagnosisFormService {
   }
 
   findAll(findToolFormDto: UpdateDiagnosisFormDto) {
-    return this.repo.find({ relations: ['user'] })
+    return this.repo.find({ relations: ['user', 'patientForm'] })
   }
 
   findOne(id: number) {
-    return this.repo.findOne(id, { relations: ['user'] })
+    return this.repo.findOne(id, { relations: ['user', 'patientForm'] })
   }
 
   update(id: number, userId, updateDiagnosisFormDto: UpdateDiagnosisFormDto) {
