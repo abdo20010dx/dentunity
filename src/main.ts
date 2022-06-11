@@ -37,6 +37,6 @@ async function bootstrap() {
     // transform: true // you can  set default values in dto
   }));
 
-  await app.listen(parseInt(process.env.PORT, Number('0.0.0.0')) || 3000);
+  await app.listen(process.env.PORT, '0.0.0.0');
 }
 bootstrap();
