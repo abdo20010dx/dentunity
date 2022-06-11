@@ -22,7 +22,8 @@ async function bootstrap() {
     })
     .addSecurityRequirements('ApiKeyAuth')
     .setTitle('dentUnity example by Abdo Goma')
-    .setDescription('The dentUnity API description' + `\n contact me on +201151761416`)
+    .setDescription('The dentUnity API description => this app helps student_doctors communicate with patients to treat,learn and graduate . also helps doctors to sell thier tools online   ' + `\n
+     contact me on +201151761416`)
     .setVersion('1.0')
     .addTag('dentUnity')
     .build();
@@ -37,6 +38,10 @@ async function bootstrap() {
     // transform: true // you can  set default values in dto
   }));
 
-  await app.listen(process.env.PORT, '0.0.0.0');
+  await app.listen(process.env.PORT, '0.0.0.0', (err, address) => {
+    console.log(err);
+    console.log(address);
+
+  });
 }
 bootstrap();
