@@ -21,8 +21,8 @@ async function bootstrap() {
       name: 'Authorization',
     })
     .addSecurityRequirements('ApiKeyAuth')
-    .setTitle('dentUnity example')
-    .setDescription('The dentUnity API description')
+    .setTitle('dentUnity example by Abdo Goma')
+    .setDescription('The dentUnity API description' + `\n contact me on +201151761416`)
     .setVersion('1.0')
     .addTag('dentUnity')
     .build();
