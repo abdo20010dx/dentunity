@@ -36,6 +36,6 @@ async function bootstrap() {
     whitelist: true, //just get data as dto
     // transform: true // you can  set default values in dto
   }));
-  await app.listen(process.env.PORT || 3000);
+  await app.listen(3000 || process.env.PORT);
 }
 bootstrap();
